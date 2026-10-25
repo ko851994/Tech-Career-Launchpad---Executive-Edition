@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Career Launchpad - Executive Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #fcf9f7;
+            --surface: #ffffff;
+            --rose-gold-100: #f9ede8;
+            --rose-gold-300: #e2a393;
+            --rose-gold-500: #b56551;
+            --rose-gold-600: #934c3c;
+            --text-main: #2d2320;
+            --text-muted: #7c6d67;
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(226, 163, 147, 0.35);
+            --shadow: 0 10px 30px 0 rgba(181, 101, 81, 0.08);
+            --radius: 16px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background-color: var(--bg-main); color: var(--text-main); line-height: 1.6; padding: 20px; max-width: 900px; margin: 0 auto; }
+        header { display: flex; justify-content: space-between; align-items: center; background: var(--glass-bg); border: 1px solid var(--glass-border); padding: 20px 24px; border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 25px; }
+        .logo-area { display: flex; align-items: center; gap: 12px; }
+        .logo-badge { background: linear-gradient(135deg, var(--rose-gold-300), var(--rose-gold-500)); color: white; width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; }
+        h1.brand-title { font-size: 1.1rem; font-weight: 700; color: var(--text-main); line-height: 1.2; }
+        .edition-tag { background: var(--text-main); color: var(--rose-gold-100); padding: 6px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; }
+        .hero-banner { background: linear-gradient(135deg, var(--rose-gold-100), #ffffff); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 30px 24px; margin-bottom: 25px; box-shadow: var(--shadow); }
+        .hero-banner h2 { font-size: 1.7rem; color: var(--text-main); margin-bottom: 10px; font-weight: 700; }
+        .hero-banner h2 span { color: var(--rose-gold-500); font-style: italic; }
+        .hero-banner p { color: var(--text-muted); font-size: 0.95rem; }
+        .ebook-card { background: var(--surface); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 28px 24px; margin-bottom: 30px; box-shadow: var(--shadow); display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .ebook-cover { width: 100%; max-width: 210px; border-radius: 8px; box-shadow: 0 12px 30px rgba(45, 35, 32, 0.22); margin-bottom: 20px; border: 1px solid var(--glass-border); }
+        .ebook-card h3 { font-size: 1.35rem; color: var(--text-main); margin-bottom: 8px; font-weight: 700; }
+        .ebook-card p { color: var(--text-muted); font-size: 0.9rem; max-width: 520px; margin-bottom: 20px; }
+        .btn-buy { background: linear-gradient(135deg, var(--rose-gold-500), var(--rose-gold-600)); color: white; padding: 14px 28px; border-radius: 30px; font-weight: 600; text-decoration: none; display: inline-block; box-shadow: 0 6px 20px rgba(181, 101, 81, 0.35); }
+        .tools-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 15px; color: var(--text-main); }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 40px; }
+        .card { background: var(--surface); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); }
+        .card-icon { font-size: 1.4rem; margin-bottom: 12px; background: var(--rose-gold-100); width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+        .card h4 { font-size: 1.05rem; margin-bottom: 6px; color: var(--text-main); }
+        .card p { font-size: 0.85rem; color: var(--text-muted); }
+        footer { text-align: center; padding: 30px 10px; font-size: 0.85rem; color: var(--text-muted); border-top: 1px solid var(--glass-border); margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <div class="logo-badge">TL</div>
+            <h1 class="brand-title">TECH CAREER<br>LAUNCHPAD</h1>
+        </div>
+        <div class="edition-tag">Executive Edition</div>
+    </header>
+
+    <div class="hero-banner">
+        <h2>Architect Your <span>Untraditional</span> Tech Career Path</h2>
+        <p>Designed specifically for tech support engineers, non-traditional technicians, and independent professionals looking to bypass standard job board filters.</p>
+    </div>
+
+    <!-- EBOOK SHOWCASE -->
+    <div class="ebook-card">
+        <img src="https://pe-images.s3.amazonaws.com/b/X3By7/cover.png" alt="The Untraditional IT Path Ebook Cover" class="ebook-cover">
+        <h3>The Untraditional IT Path</h3>
+        <p>How I Turned Transferable Skills, Curiosity, and Determination Into a Career in Technology. Grab the complete step-by-step blueprint today.</p>
+        <a href="https://payhip.com/b/X3By7" target="_blank" class="btn-buy">Get the Ebook on Payhip →</a>
+    </div>
+
+    <h3 class="tools-title">Career Acceleration Tools</h3>
+
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-icon">✨</div>
+            <h4>Background Translator</h4>
+            <p>Transform non-traditional work history into commanding enterprise-grade competencies.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h4>Proof-of-Work Lab</h4>
+            <p>Live technical simulations and verifier tools to showcase execution capability.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🎯</div>
+            <h4>STAR Transformer</h4>
+            <p>Convert standard daily support duties into hard-hitting impact achievement bullets.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">📋</div>
+            <h4>Readiness Audit</h4>
+            <p>Enterprise stack checklist to benchmark your readiness for high-paying roles.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🎓</div>
+            <h4>Study Hub</h4>
+            <p>Scenario exams and targeted interview preparation resources.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 K. LaToya. All Rights Reserved. Tech Career Launchpad - Executive Edition.
+    </footer>
+
+</body>
+</html>
